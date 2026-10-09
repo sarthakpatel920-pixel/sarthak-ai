@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="SARTHAK AI — a simple AI assistant for learning and everyday questions.">
+  <title>SARTHAK AI</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand"><span class="logo">S</span><span>SARTHAK AI</span></div>
+      <button id="newChat" class="new-chat">＋ New chat</button>
+      <div class="side-note">Your AI study buddy</div>
+      <div class="side-bottom">Keep learning. Keep growing. ✨</div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <button id="menuBtn" class="menu-btn" aria-label="Toggle menu">☰</button>
+        <strong>SARTHAK AI</strong>
+        <span class="badge">AI Assistant</span>
+      </header>
+      <section id="chat" class="chat" aria-live="polite">
+        <div class="welcome" id="welcome">
+          <div class="welcome-icon">✦</div>
+          <h1>What can I help with?</h1>
+          <p>Ask a question, learn something new, or get help with homework.</p>
+          <div class="suggestions">
+            <button data-prompt="Explain fractions in simple Hindi with an example.">🧮 Explain a maths topic</button>
+            <button data-prompt="Help me make a simple study timetable for Class 8.">📚 Make a study plan</button>
+            <button data-prompt="Explain photosynthesis in easy Hinglish.">🌱 Learn a science topic</button>
+            <button data-prompt="Give me 5 practice questions on English grammar.">✍️ Practise grammar</button>
+          </div>
+        </div>
+      </section>
+      <form id="chatForm" class="composer">
+        <textarea id="message" rows="1" placeholder="Message SARTHAK AI..." aria-label="Your message" maxlength="6000"></textarea>
+        <button id="sendBtn" type="submit" aria-label="Send message">↑</button>
+        <div class="disclaimer">SARTHAK AI can make mistakes. Check important answers with a trusted source or teacher.</div>
+      </form>
+    </main>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
